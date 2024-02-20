@@ -16,7 +16,7 @@ public class Main {
     }
 
     public static <E> void printList(E[] list){
-        for (Object l : list) {
+        for (E l : list) {
             System.out.println(l);
         }
     }
