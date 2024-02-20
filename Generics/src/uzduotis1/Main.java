@@ -1,23 +1,21 @@
 package uzduotis1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> skaiciuList = new ArrayList<>();
-        skaiciuList.add(5);
-        skaiciuList.add(10);
+        Integer[] skaiciuList = new Integer[2];
+        skaiciuList[0] = 5;
+        skaiciuList[1] = 10;
 
-        ArrayList<String> stringList = new ArrayList<>();
-        stringList.add("Hello");
-        stringList.add("New");
+        String[] stringList = new String[2];
+        stringList[0] = "Hello";
+        stringList[1] = "New";
 
         printList(skaiciuList);
         printList(stringList);
+
     }
 
-    public static void printList(List<?> list){
+    public static <E> void printList(E[] list){
         for (Object l : list) {
             System.out.println(l);
         }
