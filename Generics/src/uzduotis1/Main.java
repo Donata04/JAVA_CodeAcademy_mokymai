@@ -15,7 +15,6 @@ public class Main {
 
         printList(skaiciuList);
         printList(stringList);
-
     }
 
     public static void printList(List<?> list){
