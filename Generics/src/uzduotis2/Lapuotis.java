@@ -9,4 +9,5 @@ public class Lapuotis extends Medis{
     public String toString() {
         return this.pavadinimas;
     }
+
 }

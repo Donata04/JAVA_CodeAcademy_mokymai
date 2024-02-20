@@ -6,4 +6,5 @@ public class Pusis extends Spygluotis{
     public String toString() {
         return this.pavadinimas;
     }
+
 }

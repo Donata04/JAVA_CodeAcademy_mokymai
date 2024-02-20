@@ -9,4 +9,5 @@ public class Spygluotis extends  Medis{
     public String toString() {
         return this.pavadinimas;
     }
+
 }

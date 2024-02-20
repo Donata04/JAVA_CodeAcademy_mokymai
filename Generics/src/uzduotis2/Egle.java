@@ -6,4 +6,5 @@ public class Egle extends Spygluotis{
     public String toString() {
         return this.pavadinimas;
     }
+
 }
