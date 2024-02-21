@@ -1,6 +1,8 @@
-package uzduotis2;
+package uzduotis2.Tipai;
 
-public class Lapuotis extends Medis{
+import uzduotis2.Medziai.Medis;
+
+public class Lapuotis extends Medis {
     String pavadinimas = "Lapuotis";
     public void turi(){
         System.out.println(" turi lapus");
