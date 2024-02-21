@@ -1,6 +1,8 @@
 package uzduotis2;
 
 import java.util.ArrayList;
+import java.util.Objects;
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,13 +13,22 @@ public class Main {
         Spygluotis spygluotis = new Spygluotis();
         Berzas berzas1 = new Berzas();
 
-        ArrayList<Object> medziuSarasas = new ArrayList <>();
+        ArrayList<Medis> medziuSarasas = new ArrayList <>();
         medziuSarasas.add(azuolas);
         medziuSarasas.add(berzas);
         medziuSarasas.add(kadagys);
         medziuSarasas.add(lapuotis);
         medziuSarasas.add(spygluotis);
         medziuSarasas.add(berzas1);
+
+        ArrayList<Spygluotis> spygliuociuSarasas = new ArrayList <>();
+        spygliuociuSarasas.add(kadagys);
+        spygliuociuSarasas.add(spygluotis);
+
+        ArrayList<Berzas> berzuSarasas = new ArrayList <>();
+        berzuSarasas.add(berzas);
+        berzuSarasas.add(berzas1);
+
 //        System.out.println(medziuSarasas);
 //
 //        whatTreeAmI(azuolas);
@@ -26,9 +37,9 @@ public class Main {
 
         Metodai.ivairusMiskas(medziuSarasas);
         System.out.println();
-        Metodai.spygliuociuMiskas(medziuSarasas);
+        Metodai.spygliuociuMiskas(spygliuociuSarasas);
         System.out.println();
-        Metodai.berzuMiskas(medziuSarasas);
+        Metodai.berzuMiskas(berzuSarasas);
     }
 
     public static void whatTreeAmI(Medis medis){

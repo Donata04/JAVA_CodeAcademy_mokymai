@@ -3,7 +3,7 @@ package uzduotis2;
 import java.util.ArrayList;
 
 public class Metodai {
-    public static <E> void ivairusMiskas(ArrayList<E> sarasas){
+    public static <E extends Medis> void ivairusMiskas(ArrayList<E> sarasas){
         System.out.println("Ivairus miskas:");
         for (E medis: sarasas){
             if (medis instanceof Spygluotis) {
@@ -18,25 +18,18 @@ public class Metodai {
             }
         }
     }
-    public static <E> void spygliuociuMiskas(ArrayList<E> sarasas){
+    public static <E extends Spygluotis> void spygliuociuMiskas(ArrayList<E> sarasas){
         System.out.println("Spygliuociu miskas:");
         for (E medis: sarasas){
-            if (medis instanceof Spygluotis) {
-                Spygluotis spygluotis = (Spygluotis) medis;
-                System.out.print(spygluotis);
-                spygluotis.turi();
-            }
+            System.out.print(medis);
+            medis.turi();
         }
     }
-    public static <E> void berzuMiskas(ArrayList<E> sarasas){
+    public static <E extends Berzas> void berzuMiskas(ArrayList<E> sarasas){
         System.out.println("Berzu miskas:");
         for (E medis: sarasas){
-            if (medis instanceof Berzas) {
-                Berzas berzas = (Berzas) medis;
-                System.out.print(berzas);
-                berzas.turi();
-            }
+            System.out.print(medis);
+            medis.turi();
         }
-
     }
 }
