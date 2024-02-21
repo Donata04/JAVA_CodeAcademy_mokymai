@@ -3,9 +3,9 @@ package uzduotis2;
 import java.util.ArrayList;
 
 public class Metodai {
-    public static void ivairusMiskas(ArrayList<Object> sarasas){
+    public static <E> void ivairusMiskas(ArrayList<E> sarasas){
         System.out.println("Ivairus miskas:");
-        for (Object medis: sarasas){
+        for (E medis: sarasas){
             if (medis instanceof Spygluotis) {
                 Spygluotis spygluotis = (Spygluotis) medis;
                 System.out.print(spygluotis);
@@ -18,9 +18,9 @@ public class Metodai {
             }
         }
     }
-    public static void spygliuociuMiskas(ArrayList<Object> sarasas){
+    public static <E> void spygliuociuMiskas(ArrayList<E> sarasas){
         System.out.println("Spygliuociu miskas:");
-        for (Object medis: sarasas){
+        for (E medis: sarasas){
             if (medis instanceof Spygluotis) {
                 Spygluotis spygluotis = (Spygluotis) medis;
                 System.out.print(spygluotis);
@@ -28,9 +28,9 @@ public class Metodai {
             }
         }
     }
-    public static void berzuMiskas(ArrayList<Object> sarasas){
+    public static <E> void berzuMiskas(ArrayList<E> sarasas){
         System.out.println("Berzu miskas:");
-        for (Object medis: sarasas){
+        for (E medis: sarasas){
             if (medis instanceof Berzas) {
                 Berzas berzas = (Berzas) medis;
                 System.out.print(berzas);
