@@ -1,5 +1,10 @@
 package uzduotis2;
 
+import uzduotis2.Gentis.Berzas;
+import uzduotis2.Medziai.Medis;
+import uzduotis2.Tipai.Lapuotis;
+import uzduotis2.Tipai.Spygluotis;
+
 import java.util.ArrayList;
 
 public class Metodai {

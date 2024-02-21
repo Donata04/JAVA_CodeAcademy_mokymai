@@ -1,6 +1,8 @@
-package uzduotis2;
+package uzduotis2.Gentis;
 
-public class Egle extends Spygluotis{
+import uzduotis2.Tipai.Spygluotis;
+
+public class Egle extends Spygluotis {
     String pavadinimas = "Egle";
     @Override
     public String toString() {
