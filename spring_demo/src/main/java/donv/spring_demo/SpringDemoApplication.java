@@ -12,8 +12,7 @@ import org.springframework.context.event.EventListener;
 @SpringBootApplication
 public class SpringDemoApplication {
 	@Autowired
-	private final BookService bookService;
-
+	private BookService bookService;
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDemoApplication.class, args);
 	}
