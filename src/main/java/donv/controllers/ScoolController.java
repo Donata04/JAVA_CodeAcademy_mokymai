@@ -37,5 +37,4 @@ public class ScoolController {
     public Student getStudentByScoolId(@PathVariable Long schoolId, @PathVariable Long studentId) {
         return this.schoolService.getStudentById(schoolId, studentId);
     }
-
 }

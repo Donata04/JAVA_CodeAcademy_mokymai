@@ -23,5 +23,3 @@ public class Student {
     private Date birthDate;
     private Long schoolId;
 }
-
-
