@@ -36,7 +36,6 @@ public class SchoolService {
         throw new RuntimeException("Student not found with id: " + studentId);
 //        return school.getStudents().stream().filter(student -> student.getId().equals(studentId)).findFirst()
 //               .orElseThrow(() -> new RuntimeException("Student not found with id: " + studentId));
-
     }
 
 }
